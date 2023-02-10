@@ -1,0 +1,20 @@
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<% let indexActive = (pageName == "Index") ? "class=Active" : "" %>
+<% let newsActive = (pageName == "News") ? "class=Active" : "" %>
+<% let contactActive = (pageName == "Contact") ? "class=Active" : "" %>
+<% let aboutActive = (pageName == "About") ? "class=Active" : "" %>
+
+<div class="topnav" id="myTopnav">
+    <div>
+        <a class="topnav-icon"></a>
+        <a <%- indexActive %> href="">Inicio</a>
+        <a <%- newsActive %> href="news">Articulos</a>
+        <a <%- contactActive %> href="contact">Contacto</a>
+        <a <%- aboutActive %> href="about">Sobre mi</a>
+    </div>
+    <div class="topnav-right">
+        <a><i class="fa fa-phone"></i> 1153889889</a>
+    </div>
+</div>
