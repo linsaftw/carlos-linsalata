@@ -2,15 +2,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <% let indexActive = (pageName == "Index") ? "class=Active" : "" %>
-<% let newsActive = (pageName == "News") ? "class=Active" : "" %>
+<% let articlesActive = (pageName == "Articles") ? "class=Active" : "" %>
 <% let contactActive = (pageName == "Contact") ? "class=Active" : "" %>
 <% let aboutActive = (pageName == "About") ? "class=Active" : "" %>
 
 <div class="topnav" id="myTopnav">
     <div>
         <a class="topnav-icon"></a>
-        <a <%- indexActive %> href="">Inicio</a>
-        <a <%- newsActive %> href="news">Articulos</a>
+        <a <%- indexActive %> href="/">Inicio</a>
+        <a <%- articlesActive %> href="articles">Articulos</a>
         <a <%- contactActive %> href="contact">Contacto</a>
         <a <%- aboutActive %> href="about">Sobre mi</a>
     </div>

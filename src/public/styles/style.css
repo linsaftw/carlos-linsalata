@@ -23,7 +23,7 @@ body {
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: whitesmoke;
     text-align: center;
     padding: 30px 16px;
     text-decoration: none;
@@ -40,7 +40,7 @@ body {
 /* Add an active class to highlight the current page */
 .topnav a.active {
     background-color: #5584AC;
-    color: white;
+    color: whitesmoke;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -61,7 +61,7 @@ body {
 }
 
 .cover-text {
-    color: white;
+    color: whitesmoke;
     font-size: xx-large;
     padding: 25px;
     line-height: 10px;
@@ -70,7 +70,7 @@ body {
 .header {
     font-size: xx-large;
     padding-left: 25px;
-    color: white;
+    color: whitesmoke;
     font-weight: bold;
 }
 
@@ -79,5 +79,15 @@ body {
     padding-left: 25px;
     font-size: normal;
     line-height: 40px;
+}
+
+/* Change the color of links on hover */
+.question {
     color:#5584AC;
+}
+
+/* Change the color of links on hover */
+.question:hover {
+    color: whitesmoke;
+    transition: 0.5s;
 }
